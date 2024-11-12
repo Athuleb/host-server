@@ -23,7 +23,7 @@ class GalleryView(APIView):
             'Authorization': settings.PEXELS_API_KEY
         }
         params = {
-            'query': 'India nature locations',
+            'query': 'India landscapes scenery monuments nature locations',
             'per_page': 110 
         }
         try:
@@ -31,6 +31,11 @@ class GalleryView(APIView):
             response.raise_for_status()  
             data = response.json()
             print("data>>>?",data)
+
+        #     filtered_photos = [
+        #     photo for photo in data.get('photos',[])
+        #     if 'people' not in photo.get('alt', '').lower() and 'person' not in photo.get('alt', '').lower()
+        # ]
             return Response(data, status=status.HTTP_200_OK)
 
         except requests.exceptions.RequestException as e:
