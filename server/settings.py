@@ -32,7 +32,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['journey-engine.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
