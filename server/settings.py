@@ -32,8 +32,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 
 
-ALLOWED_HOSTS = ['server.onrender.com','localhost']
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
