@@ -32,7 +32,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 
 
-ALLOWED_HOSTS = ['journey-engine.onrender.com','webhost-client-3jre.vercel.app']
+ALLOWED_HOSTS = ['journey-engine.onrender.com', 'webhost-client-3jre.vercel.app']
 
 # Application definition
 
