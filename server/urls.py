@@ -21,7 +21,7 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('journey.urls')),
-    path('email/',include('sendemail.urls')),
-    path('distance/',include('distance.urls'))
+    path('api/email/',include('sendemail.urls')),
+    path('api/distance/',include('distance.urls'))
     
 ]
